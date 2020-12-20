@@ -1,0 +1,545 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classImagen" kind="class" language="C++" prot="public">
+    <compoundname>Imagen</compoundname>
+    <includes refid="imagen_8h" local="no">imagen.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classImagen_1a7f15719f14cd934dfcbd68c287bbbe8b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Imagen::filas</definition>
+        <argsstring></argsstring>
+        <name>filas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="43" column="5" bodyfile="imagen.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImagen_1a0a457e0727a540c60dcdf02410e25be9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Imagen::cols</definition>
+        <argsstring></argsstring>
+        <name>cols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>filas columnas </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="43" column="11" bodyfile="imagen.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classImagen_1a74bf3487e42bb65862e994883fa05b33" prot="private" static="no" mutable="no">
+        <type>byte **</type>
+        <definition>byte** Imagen::datos</definition>
+        <argsstring></argsstring>
+        <name>datos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matriz asociada a la imagen </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="44" column="7" bodyfile="imagen.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classImagen_1a9537dd1e7d6d29b9bf1131cae1619b1b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Imagen::Copiar</definition>
+        <argsstring>(const Imagen &amp;I)</argsstring>
+        <name>Copiar</name>
+        <param>
+          <type>const <ref refid="classImagen" kindref="compound">Imagen</ref> &amp;</type>
+          <declname>I</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="45" column="6" bodyfile="imagen.cpp" bodystart="9" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a8bcdb6302f3d1f9ad74e53eb9fb78eec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Imagen::Borrar</definition>
+        <argsstring>()</argsstring>
+        <name>Borrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="46" column="6" bodyfile="imagen.cpp" bodystart="23" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1ad976e75daef0ffa440a337710c448fd5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Imagen::Swap</definition>
+        <argsstring>(Imagen &amp;I)</argsstring>
+        <name>Swap</name>
+        <param>
+          <type><ref refid="classImagen" kindref="compound">Imagen</ref> &amp;</type>
+          <declname>I</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="47" column="6" bodyfile="imagen.cpp" bodystart="32" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classImagen_1ab2e649aa7a105155c7bfdb846abf0528" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Imagen::Imagen</definition>
+        <argsstring>()</argsstring>
+        <name>Imagen</name>
+        <briefdescription>
+<para>Constructor por defecto de la clase. Crea la imagen para filas=cols=0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="53" column="1" bodyfile="imagen.cpp" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1abf3c5ff5ac1689ff283c059cf4218d00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Imagen::Imagen</definition>
+        <argsstring>(int nf, int nc)</argsstring>
+        <name>Imagen</name>
+        <param>
+          <type>int</type>
+          <declname>nf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nc</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de filas del objeto imagen a construir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de columnas del objeto imagen a construir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Crea el objeto imagen con nf filas, nc columnas y reserva memoria para el array bidimensional de tamaño nf x nc </para>
+</simplesect>
+<simplesect kind="pre"><para>nf &gt;= 0 &amp; nc &gt;= 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="61" column="1" bodyfile="imagen.cpp" bodystart="56" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a5c25efc6e460f6de605942460db48057" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Imagen::Imagen</definition>
+        <argsstring>(const Imagen &amp;I)</argsstring>
+        <name>Imagen</name>
+        <param>
+          <type>const <ref refid="classImagen" kindref="compound">Imagen</ref> &amp;</type>
+          <declname>I</declname>
+        </param>
+        <briefdescription>
+<para>Constructor de copias de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>I</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>referencia al objeto imagen que desea ser copiado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="66" column="1" bodyfile="imagen.cpp" bodystart="66" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a03dd93c9cf920a9dc0b72f8bd34f2e8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Imagen::~Imagen</definition>
+        <argsstring>()</argsstring>
+        <name>~Imagen</name>
+        <briefdescription>
+<para>Destructor de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="post"><para>se libera la memoria reservada para la representación de la imagen </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="71" column="1" bodyfile="imagen.cpp" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1aeecce0f8947fbefd2468e8b43ac33f4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classImagen" kindref="compound">Imagen</ref> &amp;</type>
+        <definition>Imagen &amp; Imagen::operator=</definition>
+        <argsstring>(const Imagen &amp;I)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classImagen" kindref="compound">Imagen</ref> &amp;</type>
+          <declname>I</declname>
+        </param>
+        <briefdescription>
+<para>Operador de asignación de la clase. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>devuelve el control del objeto mediante el intercambio de punteros </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="76" column="9" bodyfile="imagen.cpp" bodystart="78" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a4dcf4f19a63961cfd46819bf17eb22ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Imagen::numfilas</definition>
+        <argsstring>() const</argsstring>
+        <name>numfilas</name>
+        <briefdescription>
+<para>Número de filas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el número de filas de la matriz asociada a la imagen </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="81" column="5" bodyfile="imagen.cpp" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a9ba6594b1091cda3716dd0ac73317128" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Imagen::numcolumnas</definition>
+        <argsstring>() const</argsstring>
+        <name>numcolumnas</name>
+        <briefdescription>
+<para>Número de columnas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Devuelve el número de columnas de la matriz asociada a la imagen </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="86" column="5" bodyfile="imagen.cpp" bodystart="94" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a6a1b159bf4039ba2f11e839871e32de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Imagen::asigna_pixel</definition>
+        <argsstring>(int f, int c, byte v)</argsstring>
+        <name>asigna_pixel</name>
+        <param>
+          <type>int</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Asignación de un valor de gris a un pixel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de la fila del pixel a asignar </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de la columna del pixel a asignar </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valor comprendido entre 0 y 255 correspondiente a la escala de gris </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Asigna al pixel(i,j) el valor v de gris </para>
+</simplesect>
+<simplesect kind="pre"><para>c &gt;= 0 &amp; f &gt;= 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="95" column="6" bodyfile="imagen.cpp" bodystart="100" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a12eeea1f5b70fe0cac4a01be5878d97d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>byte</type>
+        <definition>byte Imagen::get_pixel</definition>
+        <argsstring>(int f, int c) const</argsstring>
+        <name>get_pixel</name>
+        <param>
+          <type>int</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Obtiene el valor del pixel ubicado en la fila i y columna j. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de la fila del pixel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de la columna del pixel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>valor del pixel comprendido entre 0 y 255 </para>
+</simplesect>
+<simplesect kind="pre"><para>c &gt;= 0 &amp; f &gt;= 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="103" column="6" bodyfile="imagen.cpp" bodystart="107" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a40991a9a9c5b26ff4644210e64259070" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>byte &amp;</type>
+        <definition>byte &amp; Imagen::operator()</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Sobrecarga del operador() </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de la fila del pixel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de la columna del pixel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>valor del pixel comprendido entre 0 y 255 </para>
+</simplesect>
+<simplesect kind="pre"><para>c &gt;= 0 &amp; f &gt;= 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="111" column="7" bodyfile="imagen.cpp" bodystart="116" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1a2e71b4cd144ed577193f571c1cf4a7f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte &amp;</type>
+        <definition>const byte &amp; Imagen::operator()</definition>
+        <argsstring>(int i, int j) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Sobrecarga del operador() const. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de la fila del pixel </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de la columna del pixel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>valor del pixel comprendido entre 0 y 255 </para>
+</simplesect>
+<simplesect kind="pre"><para>c &gt;= 0 &amp; f &gt;= 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="119" column="12" bodyfile="imagen.cpp" bodystart="123" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1aed7a03e453c152cadda6c81fae80b743" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Imagen::CargarImagen</definition>
+        <argsstring>(const char *nombre)</argsstring>
+        <name>CargarImagen</name>
+        <param>
+          <type>const char *</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>Carga una imagen en un objeto de la clase a partir del nombre de un fichero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del archivo que contiene la imagen </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>retorna true si se carga la imagen con éxito, retorna false en otro caso </para>
+</simplesect>
+<simplesect kind="pre"><para>el nombre debe tener extensión .pgm </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="126" column="6" bodyfile="imagen.cpp" bodystart="130" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classImagen_1aaebe77dc4d999bef7255b340cd4988ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Imagen::SaveImagen</definition>
+        <argsstring>(const char *nombre)</argsstring>
+        <name>SaveImagen</name>
+        <param>
+          <type>const char *</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+<para>Guarda una imagen con formato .pgm a partir de un objeto imagen. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre con el que se guarda la imagen </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true en el caso de que se guarde la imagen con éxito, false para otro caso </para>
+</simplesect>
+<simplesect kind="post"><para>la imagen se almacenará en disco con la extensión .pgm </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="133" column="6" bodyfile="imagen.cpp" bodystart="168" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>T.D.A. Racional. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Una instancia <emphasis>I</emphasis> del tipo de datos abstracto <computeroutput><ref refid="classImagen" kindref="compound">Imagen</ref></computeroutput> es un objeto representado por dos números enteros que representan el número de filas y de columnas respectivamente, así como un array bidimensional de char para representar la imagen en forma de matriz</para>
+<para>Un ejemplo de su uso: <programlisting filename="ejercicio1.cpp"></programlisting></para>
+<para><simplesect kind="author"><para>Juan Manuel Rubio Rodríguez </para>
+</simplesect>
+<simplesect kind="date"><para>Noviembre 2020 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="imagen.h" line="27" column="13" bodyfile="imagen.h" bodystart="27" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classImagen_1a6a1b159bf4039ba2f11e839871e32de5" prot="public" virt="non-virtual"><scope>Imagen</scope><name>asigna_pixel</name></member>
+      <member refid="classImagen_1a8bcdb6302f3d1f9ad74e53eb9fb78eec" prot="private" virt="non-virtual"><scope>Imagen</scope><name>Borrar</name></member>
+      <member refid="classImagen_1aed7a03e453c152cadda6c81fae80b743" prot="public" virt="non-virtual"><scope>Imagen</scope><name>CargarImagen</name></member>
+      <member refid="classImagen_1a0a457e0727a540c60dcdf02410e25be9" prot="private" virt="non-virtual"><scope>Imagen</scope><name>cols</name></member>
+      <member refid="classImagen_1a9537dd1e7d6d29b9bf1131cae1619b1b" prot="private" virt="non-virtual"><scope>Imagen</scope><name>Copiar</name></member>
+      <member refid="classImagen_1a74bf3487e42bb65862e994883fa05b33" prot="private" virt="non-virtual"><scope>Imagen</scope><name>datos</name></member>
+      <member refid="classImagen_1a7f15719f14cd934dfcbd68c287bbbe8b" prot="private" virt="non-virtual"><scope>Imagen</scope><name>filas</name></member>
+      <member refid="classImagen_1a12eeea1f5b70fe0cac4a01be5878d97d" prot="public" virt="non-virtual"><scope>Imagen</scope><name>get_pixel</name></member>
+      <member refid="classImagen_1ab2e649aa7a105155c7bfdb846abf0528" prot="public" virt="non-virtual"><scope>Imagen</scope><name>Imagen</name></member>
+      <member refid="classImagen_1abf3c5ff5ac1689ff283c059cf4218d00" prot="public" virt="non-virtual"><scope>Imagen</scope><name>Imagen</name></member>
+      <member refid="classImagen_1a5c25efc6e460f6de605942460db48057" prot="public" virt="non-virtual"><scope>Imagen</scope><name>Imagen</name></member>
+      <member refid="classImagen_1a9ba6594b1091cda3716dd0ac73317128" prot="public" virt="non-virtual"><scope>Imagen</scope><name>numcolumnas</name></member>
+      <member refid="classImagen_1a4dcf4f19a63961cfd46819bf17eb22ef" prot="public" virt="non-virtual"><scope>Imagen</scope><name>numfilas</name></member>
+      <member refid="classImagen_1a40991a9a9c5b26ff4644210e64259070" prot="public" virt="non-virtual"><scope>Imagen</scope><name>operator()</name></member>
+      <member refid="classImagen_1a2e71b4cd144ed577193f571c1cf4a7f4" prot="public" virt="non-virtual"><scope>Imagen</scope><name>operator()</name></member>
+      <member refid="classImagen_1aeecce0f8947fbefd2468e8b43ac33f4a" prot="public" virt="non-virtual"><scope>Imagen</scope><name>operator=</name></member>
+      <member refid="classImagen_1aaebe77dc4d999bef7255b340cd4988ea" prot="public" virt="non-virtual"><scope>Imagen</scope><name>SaveImagen</name></member>
+      <member refid="classImagen_1ad976e75daef0ffa440a337710c448fd5" prot="private" virt="non-virtual"><scope>Imagen</scope><name>Swap</name></member>
+      <member refid="classImagen_1a03dd93c9cf920a9dc0b72f8bd34f2e8a" prot="public" virt="non-virtual"><scope>Imagen</scope><name>~Imagen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

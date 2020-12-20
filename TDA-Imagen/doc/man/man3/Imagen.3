@@ -1,0 +1,313 @@
+.TH "Imagen" 3 "Sábado, 7 de Noviembre de 2020" "ClaseImagen" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Imagen \- T\&.D\&.A\&. Racional\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <imagen\&.h>\fP
+.SS "Métodos públicos"
+
+.in +1c
+.ti -1c
+.RI "\fBImagen\fP ()"
+.br
+.RI "Constructor por defecto de la clase\&. Crea la imagen para filas=cols=0\&. "
+.ti -1c
+.RI "\fBImagen\fP (int nf, int nc)"
+.br
+.RI "Constructor de la clase\&. "
+.ti -1c
+.RI "\fBImagen\fP (const \fBImagen\fP &I)"
+.br
+.RI "Constructor de copias de la clase\&. "
+.ti -1c
+.RI "\fB~Imagen\fP ()"
+.br
+.RI "Destructor de la clase\&. "
+.ti -1c
+.RI "\fBImagen\fP & \fBoperator=\fP (const \fBImagen\fP &I)"
+.br
+.RI "Operador de asignación de la clase\&. "
+.ti -1c
+.RI "int \fBnumfilas\fP () const"
+.br
+.RI "Número de filas\&. "
+.ti -1c
+.RI "int \fBnumcolumnas\fP () const"
+.br
+.RI "Número de columnas\&. "
+.ti -1c
+.RI "void \fBasigna_pixel\fP (int f, int c, byte v)"
+.br
+.RI "Asignación de un valor de gris a un pixel\&. "
+.ti -1c
+.RI "byte \fBget_pixel\fP (int f, int c) const"
+.br
+.RI "Obtiene el valor del pixel ubicado en la fila i y columna j\&. "
+.ti -1c
+.RI "byte & \fBoperator()\fP (int i, int j)"
+.br
+.RI "Sobrecarga del operador() "
+.ti -1c
+.RI "const byte & \fBoperator()\fP (int i, int j) const"
+.br
+.RI "Sobrecarga del operador() const\&. "
+.ti -1c
+.RI "bool \fBCargarImagen\fP (const char *nombre)"
+.br
+.RI "Carga una imagen en un objeto de la clase a partir del nombre de un fichero\&. "
+.ti -1c
+.RI "bool \fBSaveImagen\fP (const char *nombre)"
+.br
+.RI "Guarda una imagen con formato \&.pgm a partir de un objeto imagen\&. "
+.in -1c
+.SH "Descripción detallada"
+.PP 
+T\&.D\&.A\&. Racional\&. 
+
+Una instancia \fII\fP del tipo de datos abstracto \fC\fBImagen\fP\fP es un objeto representado por dos números enteros que representan el número de filas y de columnas respectivamente, así como un array bidimensional de char para representar la imagen en forma de matriz
+.PP
+Un ejemplo de su uso: 
+.PP
+.nf
+
+.fi
+.PP
+.PP
+\fBAutor\fP
+.RS 4
+Juan Manuel Rubio Rodríguez 
+.RE
+.PP
+\fBFecha\fP
+.RS 4
+Noviembre 2020 
+.RE
+.PP
+
+.SH "Documentación del constructor y destructor"
+.PP 
+.SS "Imagen::Imagen (int nf, int nc)"
+
+.PP
+Constructor de la clase\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fInf\fP número de filas del objeto imagen a construir 
+.br
+\fInc\fP número de columnas del objeto imagen a construir 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Crea el objeto imagen con nf filas, nc columnas y reserva memoria para el array bidimensional de tamaño nf x nc 
+.RE
+.PP
+\fBPrecondición\fP
+.RS 4
+nf >= 0 & nc >= 0 
+.RE
+.PP
+
+.SS "Imagen::Imagen (const \fBImagen\fP & I)"
+
+.PP
+Constructor de copias de la clase\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fII\fP referencia al objeto imagen que desea ser copiado 
+.RE
+.PP
+
+.SS "Imagen::~Imagen ()"
+
+.PP
+Destructor de la clase\&. 
+.PP
+\fBPostcondición\fP
+.RS 4
+se libera la memoria reservada para la representación de la imagen 
+.RE
+.PP
+
+.SH "Documentación de las funciones miembro"
+.PP 
+.SS "void Imagen::asigna_pixel (int f, int c, byte v)"
+
+.PP
+Asignación de un valor de gris a un pixel\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIf\fP número de la fila del pixel a asignar 
+.br
+\fIc\fP número de la columna del pixel a asignar 
+.br
+\fIv\fP valor comprendido entre 0 y 255 correspondiente a la escala de gris 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+Asigna al pixel(i,j) el valor v de gris 
+.RE
+.PP
+\fBPrecondición\fP
+.RS 4
+c >= 0 & f >= 0 
+.RE
+.PP
+
+.SS "bool Imagen::CargarImagen (const char * nombre)"
+
+.PP
+Carga una imagen en un objeto de la clase a partir del nombre de un fichero\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fInombre\fP nombre del archivo que contiene la imagen 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+retorna true si se carga la imagen con éxito, retorna false en otro caso 
+.RE
+.PP
+\fBPrecondición\fP
+.RS 4
+el nombre debe tener extensión \&.pgm 
+.RE
+.PP
+
+.SS "byte Imagen::get_pixel (int f, int c) const"
+
+.PP
+Obtiene el valor del pixel ubicado en la fila i y columna j\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIf\fP número de la fila del pixel 
+.br
+\fIc\fP número de la columna del pixel 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+valor del pixel comprendido entre 0 y 255 
+.RE
+.PP
+\fBPrecondición\fP
+.RS 4
+c >= 0 & f >= 0 
+.RE
+.PP
+
+.SS "int Imagen::numcolumnas () const"
+
+.PP
+Número de columnas\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve el número de columnas de la matriz asociada a la imagen 
+.RE
+.PP
+
+.SS "int Imagen::numfilas () const"
+
+.PP
+Número de filas\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+Devuelve el número de filas de la matriz asociada a la imagen 
+.RE
+.PP
+
+.SS "byte & Imagen::operator() (int i, int j)"
+
+.PP
+Sobrecarga del operador() 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIf\fP número de la fila del pixel 
+.br
+\fIc\fP número de la columna del pixel 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+valor del pixel comprendido entre 0 y 255 
+.RE
+.PP
+\fBPrecondición\fP
+.RS 4
+c >= 0 & f >= 0 
+.RE
+.PP
+
+.SS "const byte & Imagen::operator() (int i, int j) const"
+
+.PP
+Sobrecarga del operador() const\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fIf\fP número de la fila del pixel 
+.br
+\fIc\fP número de la columna del pixel 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+valor del pixel comprendido entre 0 y 255 
+.RE
+.PP
+\fBPrecondición\fP
+.RS 4
+c >= 0 & f >= 0 
+.RE
+.PP
+
+.SS "\fBImagen\fP & Imagen::operator= (const \fBImagen\fP & I)"
+
+.PP
+Operador de asignación de la clase\&. 
+.PP
+\fBDevuelve\fP
+.RS 4
+devuelve el control del objeto mediante el intercambio de punteros 
+.RE
+.PP
+
+.SS "bool Imagen::SaveImagen (const char * nombre)"
+
+.PP
+Guarda una imagen con formato \&.pgm a partir de un objeto imagen\&. 
+.PP
+\fBParámetros\fP
+.RS 4
+\fInombre\fP nombre con el que se guarda la imagen 
+.RE
+.PP
+\fBDevuelve\fP
+.RS 4
+true en el caso de que se guarde la imagen con éxito, false para otro caso 
+.RE
+.PP
+\fBPostcondición\fP
+.RS 4
+la imagen se almacenará en disco con la extensión \&.pgm 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generado automáticamente por Doxygen para ClaseImagen del código fuente\&.

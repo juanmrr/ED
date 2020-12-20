@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="repImagen" kind="page">
+    <compoundname>repImagen</compoundname>
+    <title>Rep del TDA Imagen</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="repImagen_1invImagen">
+<title>Invariante de la representación</title>
+<para>El invariante es <emphasis>rep.filas&gt;=0</emphasis> &amp; rep.cols&gt;=0</para>
+</sect1>
+<sect1 id="repImagen_1faImagen">
+<title>Función de abstracción</title>
+<para>Un objeto válido <emphasis>rep</emphasis> del TDA <ref refid="classImagen" kindref="compound">Imagen</ref> representa al valor viene representado por un valor positivo de filas y columnas, así como un valor comprendido 0 &lt;= datos(i,j) &lt;= 255 para cada i,j (filas, columnas) del array bidimensional </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

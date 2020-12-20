@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="imagen_8h" kind="file" language="C++">
+    <compoundname>imagen.h</compoundname>
+    <includes local="yes">imagenES.h</includes>
+    <includedby refid="ejercicio1_8cpp" local="yes">ejercicio1.cpp</includedby>
+    <includedby refid="ejercicio3_8cpp" local="yes">ejercicio3.cpp</includedby>
+    <includedby refid="imagen_8cpp" local="yes">imagen.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>imagen.h</label>
+        <link refid="imagen_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>imagenES.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classImagen" prot="public">Imagen</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="imagen_8h_1a0c8186d9b9b7880309c27230bbb5e69d" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char byte</definition>
+        <argsstring></argsstring>
+        <name>byte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="imagen.h" line="10" column="23" bodyfile="imagen.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Fichero cabecera del TDA <ref refid="classImagen" kindref="compound">Imagen</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>_IMAGEN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_IMAGEN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;imagenES.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>byte;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classImagen" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classImagen" kindref="compound">Imagen</ref>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filas,<sp/>cols;<sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>**<sp/>datos;<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Copiar(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classImagen" kindref="compound">Imagen</ref><sp/>&amp;I);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Borrar();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Swap(<ref refid="classImagen" kindref="compound">Imagen</ref><sp/>&amp;I);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImagen_1ab2e649aa7a105155c7bfdb846abf0528" kindref="member">Imagen</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImagen_1ab2e649aa7a105155c7bfdb846abf0528" kindref="member">Imagen</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nc);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImagen_1ab2e649aa7a105155c7bfdb846abf0528" kindref="member">Imagen</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classImagen" kindref="compound">Imagen</ref><sp/>&amp;I);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImagen_1a03dd93c9cf920a9dc0b72f8bd34f2e8a" kindref="member">~Imagen</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classImagen" kindref="compound">Imagen</ref><sp/>&amp;<sp/><ref refid="classImagen_1aeecce0f8947fbefd2468e8b43ac33f4a" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classImagen" kindref="compound">Imagen</ref><sp/>&amp;I);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a4dcf4f19a63961cfd46819bf17eb22ef" kindref="member">numfilas</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a9ba6594b1091cda3716dd0ac73317128" kindref="member">numcolumnas</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a6a1b159bf4039ba2f11e839871e32de5" kindref="member">asigna_pixel</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c,<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>v);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/><ref refid="classImagen_1a12eeea1f5b70fe0cac4a01be5878d97d" kindref="member">get_pixel</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>&amp;<sp/><ref refid="classImagen_1a40991a9a9c5b26ff4644210e64259070" kindref="member">operator() </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>&amp;<ref refid="classImagen_1a40991a9a9c5b26ff4644210e64259070" kindref="member">operator() </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImagen_1aed7a03e453c152cadda6c81fae80b743" kindref="member">CargarImagen</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>nombre);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classImagen_1aaebe77dc4d999bef7255b340cd4988ea" kindref="member">SaveImagen</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>nombre);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="imagen.h"/>
+  </compounddef>
+</doxygen>

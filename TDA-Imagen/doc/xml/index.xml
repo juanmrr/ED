@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classImagen" kind="class"><name>Imagen</name>
+    <member refid="classImagen_1a7f15719f14cd934dfcbd68c287bbbe8b" kind="variable"><name>filas</name></member>
+    <member refid="classImagen_1a0a457e0727a540c60dcdf02410e25be9" kind="variable"><name>cols</name></member>
+    <member refid="classImagen_1a74bf3487e42bb65862e994883fa05b33" kind="variable"><name>datos</name></member>
+    <member refid="classImagen_1a9537dd1e7d6d29b9bf1131cae1619b1b" kind="function"><name>Copiar</name></member>
+    <member refid="classImagen_1a8bcdb6302f3d1f9ad74e53eb9fb78eec" kind="function"><name>Borrar</name></member>
+    <member refid="classImagen_1ad976e75daef0ffa440a337710c448fd5" kind="function"><name>Swap</name></member>
+    <member refid="classImagen_1ab2e649aa7a105155c7bfdb846abf0528" kind="function"><name>Imagen</name></member>
+    <member refid="classImagen_1abf3c5ff5ac1689ff283c059cf4218d00" kind="function"><name>Imagen</name></member>
+    <member refid="classImagen_1a5c25efc6e460f6de605942460db48057" kind="function"><name>Imagen</name></member>
+    <member refid="classImagen_1a03dd93c9cf920a9dc0b72f8bd34f2e8a" kind="function"><name>~Imagen</name></member>
+    <member refid="classImagen_1aeecce0f8947fbefd2468e8b43ac33f4a" kind="function"><name>operator=</name></member>
+    <member refid="classImagen_1a4dcf4f19a63961cfd46819bf17eb22ef" kind="function"><name>numfilas</name></member>
+    <member refid="classImagen_1a9ba6594b1091cda3716dd0ac73317128" kind="function"><name>numcolumnas</name></member>
+    <member refid="classImagen_1a6a1b159bf4039ba2f11e839871e32de5" kind="function"><name>asigna_pixel</name></member>
+    <member refid="classImagen_1a12eeea1f5b70fe0cac4a01be5878d97d" kind="function"><name>get_pixel</name></member>
+    <member refid="classImagen_1a40991a9a9c5b26ff4644210e64259070" kind="function"><name>operator()</name></member>
+    <member refid="classImagen_1a2e71b4cd144ed577193f571c1cf4a7f4" kind="function"><name>operator()</name></member>
+    <member refid="classImagen_1aed7a03e453c152cadda6c81fae80b743" kind="function"><name>CargarImagen</name></member>
+    <member refid="classImagen_1aaebe77dc4d999bef7255b340cd4988ea" kind="function"><name>SaveImagen</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="ejercicio1_8cpp" kind="file"><name>ejercicio1.cpp</name>
+    <member refid="ejercicio1_8cpp_1a56825facd19fb211abb51c9ba961b43b" kind="function"><name>Umbral</name></member>
+    <member refid="ejercicio1_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="ejercicio3_8cpp" kind="file"><name>ejercicio3.cpp</name>
+    <member refid="ejercicio3_8cpp_1afe36177f776f332ee1972c766db6370f" kind="function"><name>Zoom</name></member>
+    <member refid="ejercicio3_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="imagen_8cpp" kind="file"><name>imagen.cpp</name>
+  </compound>
+  <compound refid="imagen_8h" kind="file"><name>imagen.h</name>
+    <member refid="imagen_8h_1a0c8186d9b9b7880309c27230bbb5e69d" kind="typedef"><name>byte</name></member>
+  </compound>
+  <compound refid="repImagen" kind="page"><name>repImagen</name>
+  </compound>
+</doxygenindex>

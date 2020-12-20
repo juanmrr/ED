@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ClaseImagen: Fichero Fuente imagen.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ClaseImagen
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Buscar');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imagen.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imagen_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef _IMAGEN_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define _IMAGEN_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;imagenES.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> byte;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classImagen.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classImagen.html">Imagen</a>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> filas, cols;  </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">byte</span> ** datos; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> Copiar(<span class="keyword">const</span> <a class="code" href="classImagen.html">Imagen</a> &amp;I);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> Borrar();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> Swap(<a class="code" href="classImagen.html">Imagen</a> &amp;I);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528">Imagen</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528">Imagen</a>(<span class="keywordtype">int</span> nf, <span class="keywordtype">int</span> nc);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528">Imagen</a>(<span class="keyword">const</span> <a class="code" href="classImagen.html">Imagen</a> &amp;I);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classImagen.html#a03dd93c9cf920a9dc0b72f8bd34f2e8a">~Imagen</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classImagen.html">Imagen</a> &amp; <a class="code" href="classImagen.html#aeecce0f8947fbefd2468e8b43ac33f4a">operator=</a>(<span class="keyword">const</span> <a class="code" href="classImagen.html">Imagen</a> &amp;I);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classImagen.html#a4dcf4f19a63961cfd46819bf17eb22ef">numfilas</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classImagen.html#a9ba6594b1091cda3716dd0ac73317128">numcolumnas</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classImagen.html#a6a1b159bf4039ba2f11e839871e32de5">asigna_pixel</a>(<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c, <span class="keywordtype">byte</span> v);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">byte</span> <a class="code" href="classImagen.html#a12eeea1f5b70fe0cac4a01be5878d97d">get_pixel</a>(<span class="keywordtype">int</span> f, <span class="keywordtype">int</span> c) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">byte</span> &amp; <a class="code" href="classImagen.html#a40991a9a9c5b26ff4644210e64259070">operator() </a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">byte</span> &amp;<a class="code" href="classImagen.html#a40991a9a9c5b26ff4644210e64259070">operator() </a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classImagen.html#aed7a03e453c152cadda6c81fae80b743">CargarImagen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * nombre);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classImagen.html#aaebe77dc4d999bef7255b340cd4988ea">SaveImagen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * nombre);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassImagen_html_aeecce0f8947fbefd2468e8b43ac33f4a"><div class="ttname"><a href="classImagen.html#aeecce0f8947fbefd2468e8b43ac33f4a">Imagen::operator=</a></div><div class="ttdeci">Imagen &amp; operator=(const Imagen &amp;I)</div><div class="ttdoc">Operador de asignación de la clase.</div><div class="ttdef"><b>Definition:</b> imagen.cpp:78</div></div>
+<div class="ttc" id="aclassImagen_html_a03dd93c9cf920a9dc0b72f8bd34f2e8a"><div class="ttname"><a href="classImagen.html#a03dd93c9cf920a9dc0b72f8bd34f2e8a">Imagen::~Imagen</a></div><div class="ttdeci">~Imagen()</div><div class="ttdoc">Destructor de la clase.</div><div class="ttdef"><b>Definition:</b> imagen.cpp:72</div></div>
+<div class="ttc" id="aclassImagen_html_ab2e649aa7a105155c7bfdb846abf0528"><div class="ttname"><a href="classImagen.html#ab2e649aa7a105155c7bfdb846abf0528">Imagen::Imagen</a></div><div class="ttdeci">Imagen()</div><div class="ttdoc">Constructor por defecto de la clase. Crea la imagen para filas=cols=0.</div><div class="ttdef"><b>Definition:</b> imagen.cpp:48</div></div>
+<div class="ttc" id="aclassImagen_html_a9ba6594b1091cda3716dd0ac73317128"><div class="ttname"><a href="classImagen.html#a9ba6594b1091cda3716dd0ac73317128">Imagen::numcolumnas</a></div><div class="ttdeci">int numcolumnas() const</div><div class="ttdoc">Número de columnas.</div><div class="ttdef"><b>Definition:</b> imagen.cpp:94</div></div>
+<div class="ttc" id="aclassImagen_html_aaebe77dc4d999bef7255b340cd4988ea"><div class="ttname"><a href="classImagen.html#aaebe77dc4d999bef7255b340cd4988ea">Imagen::SaveImagen</a></div><div class="ttdeci">bool SaveImagen(const char *nombre)</div><div class="ttdoc">Guarda una imagen con formato .pgm a partir de un objeto imagen.</div><div class="ttdef"><b>Definition:</b> imagen.cpp:168</div></div>
+<div class="ttc" id="aclassImagen_html_a12eeea1f5b70fe0cac4a01be5878d97d"><div class="ttname"><a href="classImagen.html#a12eeea1f5b70fe0cac4a01be5878d97d">Imagen::get_pixel</a></div><div class="ttdeci">byte get_pixel(int f, int c) const</div><div class="ttdoc">Obtiene el valor del pixel ubicado en la fila i y columna j.</div><div class="ttdef"><b>Definition:</b> imagen.cpp:107</div></div>
+<div class="ttc" id="aclassImagen_html_a40991a9a9c5b26ff4644210e64259070"><div class="ttname"><a href="classImagen.html#a40991a9a9c5b26ff4644210e64259070">Imagen::operator()</a></div><div class="ttdeci">byte &amp; operator()(int i, int j)</div><div class="ttdoc">Sobrecarga del operador()</div><div class="ttdef"><b>Definition:</b> imagen.cpp:116</div></div>
+<div class="ttc" id="aclassImagen_html_aed7a03e453c152cadda6c81fae80b743"><div class="ttname"><a href="classImagen.html#aed7a03e453c152cadda6c81fae80b743">Imagen::CargarImagen</a></div><div class="ttdeci">bool CargarImagen(const char *nombre)</div><div class="ttdoc">Carga una imagen en un objeto de la clase a partir del nombre de un fichero.</div><div class="ttdef"><b>Definition:</b> imagen.cpp:130</div></div>
+<div class="ttc" id="aclassImagen_html_a6a1b159bf4039ba2f11e839871e32de5"><div class="ttname"><a href="classImagen.html#a6a1b159bf4039ba2f11e839871e32de5">Imagen::asigna_pixel</a></div><div class="ttdeci">void asigna_pixel(int f, int c, byte v)</div><div class="ttdoc">Asignación de un valor de gris a un pixel.</div><div class="ttdef"><b>Definition:</b> imagen.cpp:100</div></div>
+<div class="ttc" id="aimagen_8h_html"><div class="ttname"><a href="imagen_8h.html">imagen.h</a></div><div class="ttdoc">Fichero cabecera del TDA Imagen.</div></div>
+<div class="ttc" id="aclassImagen_html"><div class="ttname"><a href="classImagen.html">Imagen</a></div><div class="ttdoc">T.D.A. Racional.</div><div class="ttdef"><b>Definition:</b> imagen.h:27</div></div>
+<div class="ttc" id="aclassImagen_html_a4dcf4f19a63961cfd46819bf17eb22ef"><div class="ttname"><a href="classImagen.html#a4dcf4f19a63961cfd46819bf17eb22ef">Imagen::numfilas</a></div><div class="ttdeci">int numfilas() const</div><div class="ttdoc">Número de filas.</div><div class="ttdef"><b>Definition:</b> imagen.cpp:88</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
